@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app5_list_builder/drawer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 //import 'package:sounds/sounds.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
           title: Text("Alphabet"),
         ),
         body: Home(),
+        drawer: MyDrawer(),
       ),
     );
   }
@@ -51,6 +53,7 @@ Widget _Homepage(BuildContext context){
   ,'assets/sounds/t.mp3','assets/sounds/u.mp3','assets/sounds/v.mp3','assets/sounds/w.mp3'
   ,'assets/sounds/x.mp3','assets/sounds/y.mp3','assets/sounds/z.mp3'
  ];
+ //String path="assets/sound/";
   return ListView.builder(
     itemCount: alpha.length,
       itemBuilder: (context,index){
